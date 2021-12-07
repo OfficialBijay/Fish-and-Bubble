@@ -1,0 +1,234 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+} */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+    background-color:#6cdbeb;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+    border:3px solid #4caf50;
+}
+.canvas{
+    box-sizing: content-box;
+    margin-left: 38%;
+    margin-top: 10px;
+    background-color: #36454F;
+    border: 5px solid magenta;
+    box-shadow: -10px -10px 15px #6cdbeb,
+            10px 10px 10px rgba(0,0,0,0.1),
+            inset -10px -10px 15px #36454F,
+            inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+.high-score{
+    position: absolute;
+    box-sizing: content-box;
+    height: 80px;
+    width: 210px;
+    background: none;
+    border: 5px solid magenta;
+    box-shadow: -10px -10px 15px #6cdbeb,
+            10px 10px 10px rgba(0,0,0,0.1),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 10px rgba(0,0,0,0.1);
+    margin-left: 65%;
+    top: 144px;
+    left: 120px;
+}
+.high-score h2{
+    margin-top: 2px;
+    margin-left: 45px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+.high-score hr{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    height: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden;
+    background-color: magenta;
+    box-shadow: -10px -10px 15px #6cdbeb,
+    10px 10px 10px rgba(0,0,0,0.1),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+.score{
+    box-sizing: content-box;
+    margin-left: 38%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    height: 50px;
+    width: 300px;
+    background: none;
+    border: 5px solid magenta;
+    box-shadow: -10px -10px 15px #6cdbeb,
+            10px 10px 10px rgba(0,0,0,0.1),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+#gameover{
+    position: absolute;
+    left: 508px;
+    top: 150px;
+    background: none;
+    color: #fff;
+    font-family: cursive;
+    margin: 0px 0px 0px 0px;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    font-size: 50px;
+    display: none;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+.controls{
+    box-sizing: content-box;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+}
+button{
+    height:40px;
+    width: 88px;
+    border-radius: 10px;
+    border-color: #4caf50;
+    font-size: 20px;
+    outline: none;
+    background-color: #6cdbeb;
+    cursor: pointer;
+    box-shadow: -10px -10px 15px #6cdbeb,
+            10px 10px 10px rgba(0,0,0,0.1),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+button:hover{
+    font-family: cursive;
+    background-color: #36454F;
+    color: aliceblue;
+}
+#newgame{
+    height: 50px;
+    width: 100px;
+    display: none;
+}
+#pause{
+    display: none;
+}
+.score-board td{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 25px;
+    width: 100px;
+    /* border: 2px dotted green; */
+}
+#user_name{
+    margin-left: 2px;
+    overflow: hidden;
+}
+#user_score{
+    margin-left: 50px;
+}
+#log-out{
+    display: block;
+    position: absolute;
+    margin-right: 0px;
+    top: 330px;
+    left: 1000px;
+}
+input[type="submit"]{
+    display: none;
+    position: absolute;
+    margin-right: 0px;
+    padding: 0px 0px 0px 0px;
+    top: 270px;
+    left: 1000px;
+    height:40px;
+    width: 125px;
+    border-radius: 10px;
+    border-color: #4caf50;
+    font-size: 20px;
+    outline: none;
+    background-color: #6cdbeb;
+    cursor: pointer;
+    box-shadow: -10px -10px 15px #6cdbeb,
+            10px 10px 10px rgba(0,0,0,0.1),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 10px rgba(0,0,0,0.1);
+}
+input[type="submit"]:hover{
+    font-family: cursive;
+    background-color: #36454F;
+    color: aliceblue;
+}
+.info{
+    box-sizing: content-box;
+    position: absolute;
+    top: 90px;
+    height: 60px;
+    width: 280px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    font-family: sans-serif;
+    border-radius:0px 25px 25px 25px;
+    outline: none;
+    border: none;
+    display: none;
+}
+#info{
+    position: absolute;
+    top: 46px;
+    left: 150px;
+    cursor: pointer;
+}
+.fa{
+    font-size: 20px;
+    display: block;
+}
+i:hover + .info{
+    display: block;
+}
+#name{
+    position: absolute;
+    left: 125px;
+    top: 125px;
+    padding-top: 3px;
+    padding-left: 5px;
+    height: 27px;
+    width: 170px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius:0px 25px 25px 25px;
+    border: none;
+    outline: none;
+    animation: animate linear 0.5s;
+    display: none;
+}
+@keyframes animate{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 200px;
+    }
+}

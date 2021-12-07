@@ -1,0 +1,79 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.login-box{
+    width: 300px;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    display: block;
+}
+.registration-box{
+    width: 300px;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    display: none;
+}
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border: none;
+    border-bottom: 6px solid #4caf50;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 13px 0px;
+}
+.registration-box h1{
+    float: left;
+    font-size: 40px;
+    border: none;
+    border-bottom: 6px solid #4caf50;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 13px 0px;
+}
+
+.text-box{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    border-radius: 1px solid #4caf50;
+}
+.text-box i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+.text-box input{
+    position: relative;
+    border: none;
+    border-bottom: 2px solid #4caf50;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0px 10px;
+}
+p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+button.js{
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px dashed blue;
+    height: 20px;
+    width: 109px;
+    font-size: 15px;
+    color: blue;
+    cursor:pointer;
+    box-shadow: none;
+}
+button.js:hover{
+    font-family: 'Times New Roman', Times, serif;
+}
